@@ -1,0 +1,131 @@
+$dark-primary-bg: #091e42;
+$dark-primary-color: #edeff1;
+$dark-active-link: #1d63fa;
+$dark-link-color: #edeff1;
+
+$light-primary-bg: #ffffff;
+$light-primary-color: #313131;
+
+.signin {
+    border: .5px solid hsla(0, 0%, 53%, 0.651);
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(14, 13, 13, 0.05) 0px 5px 10px;
+    // box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+
+    &.light-mode {
+        background-color: $light-primary-bg;
+        color: $light-primary-color;
+    }
+
+    &.dark-mode {
+        background-color: $dark-primary-bg;
+        color: $dark-primary-color;
+
+        .form-input {
+            background-color: #e6e9ec;
+        }
+
+        .link,
+        .forget-pass {
+            color: $dark-primary-color;
+            font-size: 16px;
+
+        }
+
+    }
+
+    .signinform {
+        padding: 0 40px 40px 0;
+        box-sizing: border-box;
+    }
+
+    .heading-secondary {
+        text-align: center;
+        font-family: cursive;
+        font-weight: 500;
+    }
+
+    .text-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        margin: 15px 0 5px 0;
+        padding-left: 30px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .form-input {
+        border-radius: 20px;
+        margin: 5px 20px 20px 20px;
+        padding: 5px 20px 5px 20px;
+        border: 1px solid #cccccc;
+        font-size: 16px;
+    }
+
+    input:focus {
+        outline: 1px solid #123e9c;
+    }
+
+    .form-input::placeholder {
+        font-size: 14px;
+        color: hsla(0, 0%, 49%, 0.919);
+    }
+
+    .terms-condition {
+        display: flex;
+        margin: 5px 20px 20px 30px;
+    }
+
+    .terms-input:focus {
+        outline: none;
+    }
+
+    .terms-sentence {
+        margin-left: 7px;
+    }
+
+    .link {
+        text-decoration: none;
+        color: #333399;
+    }
+
+    .signup-button {
+        display: block;
+        margin: 1px auto 8px;
+        border-radius: 20px;
+        width: 90%;
+        height: 30px;
+        padding: 0 20px;
+        background-color: #123e9c !important;
+        color: #fff !important;
+        font-size: 1rem;
+        cursor: pointer;
+        border: 1px solid #123e9c;
+    }
+
+    .signup-button:hover {
+        background-color: #1547b3 !important;
+    }
+
+    .login_link {
+        margin: 5px 20px 20px 30px;
+
+    }
+
+    ////For login page
+    .pass {
+        margin: 0px 20px 20px 30px;
+    }
+
+    .forget-pass {
+        text-decoration: none;
+        color: #333399;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+}
